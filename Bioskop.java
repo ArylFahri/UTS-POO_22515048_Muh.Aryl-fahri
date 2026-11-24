@@ -67,8 +67,8 @@ public class Bioskop {
 
         for (Tiket t : daftarTiket) {
             if (t.isAktif()
-                && t.getStudio() == tiket.getStudio()
-                && t.getNomorKursi().equalsIgnoreCase(
+    && t.getStudio().getKodeStudio().equalsIgnoreCase(tiket.getStudio().getKodeStudio()) // <-- Diubah membandingkan string kodenya
+    && t.getNomorKursi().equalsIgnoreCase(tiket.getNomorKursi())) {
                     tiket.getNomorKursi())) {
                 System.out.println("Kursi sudah dipesan!");
                 return false;
