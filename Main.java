@@ -7,10 +7,16 @@ public class Main {
 
         Bioskop bioskop = new Bioskop("Bioskop Mini Aryl");
         AntrianTiket antrian = new AntrianTiket();
+        
+        bioskop.tambahFilm(new Film("F001", "Avatar: The Way of Water", "Sci-Fi", 192, true));
+        bioskop.tambahFilm(new Film("F002", "Avengers: Endgame", "Action", 181, true));
+        
+        bioskop.tambahStudio(new Studio("S01", "Studio 1 (Regular)", 50, true));
+        bioskop.tambahStudio(new Studio("S02", "Studio 2 (IMAX)", 30, true));
 
         int pilihan;
         int nomorTiket = 1;
-
+      
         do {
             System.out.println("\n==============================");
             System.out.println("   SISTEM MANAJEMEN BIOSKOP");
