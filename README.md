@@ -28,3 +28,8 @@ Java
 ## Identitas
 Nama: Muh. Aryl Fahri  
 NIM: 22515048
+
+## Cara Menjalankan Program
+1. Buka project ini di Java IDE (VS Code / IntelliJ / NetBeans).
+2. Jalankan file `Main.java`.
+3. Pilih menu yang tersedia pada layar console untuk mengelola data film, studio, atau memesan tiket.
